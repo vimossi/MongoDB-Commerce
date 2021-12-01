@@ -1,5 +1,5 @@
 db.produtos.updateOne(
-  { nome: "Bic Mac" },
+  { nome: "Big Mac" },
   {
     $unset: { 
       curtidas: "",
@@ -10,4 +10,4 @@ db.produtos.updateOne(
 db.produtos.find(
   {}, 
   { _id: 0, curtidas: 1, nome: 1 },
-  );
+);
